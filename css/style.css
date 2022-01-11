@@ -1,4 +1,249 @@
 body{
-    background-color: #fff;
     min-height: 100vh;
+    background-color: #34495e;
+    overflow: hidden;
 }
+
+.main{
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.hair-intro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: hair-intro 3s infinite ease-in-out;
+}
+
+.hair{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: #4074e6;
+    border-radius: 0 125px 125px 0;
+}
+
+.face{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.white-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: white-face 3s infinite ease-in-out;
+}
+
+.white{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    border-radius: 0 87.5px 87.5px 0;
+    background-color: #fff;
+}
+
+.shadow-part{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: shadow-part 3s infinite ease-in-out;
+}
+
+.shadow{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 87.5px 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.big-beak-part{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: big-beak-part 3s infinite ease-in-out;
+}
+
+.big-beak{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 87.5px 0 0 0;
+    background-color: #f7a942;
+}
+
+.small-beak-part{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: small-beak-part 3s infinite ease-in-out;
+}
+
+.small-beak{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 25%;
+    border-radius: 0 0 0 43.25px;
+    background-color: #f7a942;
+}
+
+.eye{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: 51%;
+    left: 51%;
+    background-color: #0e1527;
+    border-radius: 50%;
+    z-index: 2;
+    animation: eye 3s infinite ease-in-out;
+}
+
+@keyframes hair-intro {
+    0% {
+        transform: rotate(-360deg);
+    }
+    15% {
+        transform: rotate(-360deg);
+    }
+    35% {
+        transform: rotate(-180deg);
+    }
+    65% {
+        transform: rotate(-180deg);
+    }
+    85% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes white-face {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(-180deg);
+    }
+    65% {
+        transform: rotate(-180deg);
+    }
+    85% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes shadow-part {
+    15% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(90deg);
+    }
+    65% {
+        transform: rotate(90deg);
+    }
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes big-beak-part {
+    15% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(90deg);
+    }
+    65% {
+        transform: rotate(90deg);
+    }
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes small-beak-part {
+    15% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(-90deg);
+    }
+    65% {
+        transform: rotate(-90deg);
+    }
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes eye {
+    15% {
+        left: 51%;
+        transform: translate(0px);
+    }
+    35% {
+        left: 49%;
+        transform: translate(-100%);
+    }
+    65% {
+        left: 49%;
+        transform: translate(-100%);
+    }
+    85% {
+        left: 51%;
+        transform: translate(0px);
+    }
+}
+
+
